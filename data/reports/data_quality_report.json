@@ -1,0 +1,1273 @@
+{
+  "dataset_path": "C:\\Users\\Yatharth Mehta\\OneDrive\\Desktop\\Risk_Manager_System\\data\\raw\\dataset_prices.csv",
+  "validation_timestamp_utc": "2026-10-03T20:26:27.779819+00:00",
+  "validation_status": "passed",
+  "errors": [],
+  "warnings": [],
+  "information": [],
+  "schema": {
+    "format": "wide",
+    "date_column": "date",
+    "asset_columns": [
+      "HDFCBANK.NS",
+      "ICICIBANK.NS",
+      "KOTAKBANK.NS",
+      "SBIN.NS",
+      "AXISBANK.NS",
+      "TCS.NS",
+      "INFY.NS",
+      "WIPRO.NS",
+      "HCLTECH.NS",
+      "TECHM.NS",
+      "HINDUNILVR.NS",
+      "ITC.NS",
+      "NESTLEIND.NS",
+      "BRITANNIA.NS",
+      "DABUR.NS",
+      "SUNPHARMA.NS",
+      "DRREDDY.NS",
+      "CIPLA.NS",
+      "LUPIN.NS",
+      "AUROPHARMA.NS",
+      "MARUTI.NS",
+      "M&M.NS",
+      "BAJAJ-AUTO.NS",
+      "HEROMOTOCO.NS",
+      "EICHERMOT.NS",
+      "RELIANCE.NS",
+      "ONGC.NS",
+      "IOC.NS",
+      "BPCL.NS",
+      "HINDPETRO.NS",
+      "TATASTEEL.NS",
+      "HINDALCO.NS",
+      "JSWSTEEL.NS",
+      "VEDL.NS",
+      "NMDC.NS",
+      "LT.NS",
+      "ULTRACEMCO.NS",
+      "GRASIM.NS",
+      "AMBUJACEM.NS",
+      "ACC.NS",
+      "TITAN.NS",
+      "ASIANPAINT.NS",
+      "PIDILITIND.NS",
+      "HAVELLS.NS",
+      "VOLTAS.NS",
+      "BHARTIARTL.NS",
+      "IDEA.NS",
+      "RCOM.NS",
+      "TATACOMM.NS",
+      "MTNL.NS"
+    ],
+    "column_count": 51,
+    "asset_count": 50,
+    "source_value_types": "CSV text; price lexemes validated as finite numeric values"
+  },
+  "row_count": 4185,
+  "asset_count": 50,
+  "asset_names": [
+    "HDFCBANK.NS",
+    "ICICIBANK.NS",
+    "KOTAKBANK.NS",
+    "SBIN.NS",
+    "AXISBANK.NS",
+    "TCS.NS",
+    "INFY.NS",
+    "WIPRO.NS",
+    "HCLTECH.NS",
+    "TECHM.NS",
+    "HINDUNILVR.NS",
+    "ITC.NS",
+    "NESTLEIND.NS",
+    "BRITANNIA.NS",
+    "DABUR.NS",
+    "SUNPHARMA.NS",
+    "DRREDDY.NS",
+    "CIPLA.NS",
+    "LUPIN.NS",
+    "AUROPHARMA.NS",
+    "MARUTI.NS",
+    "M&M.NS",
+    "BAJAJ-AUTO.NS",
+    "HEROMOTOCO.NS",
+    "EICHERMOT.NS",
+    "RELIANCE.NS",
+    "ONGC.NS",
+    "IOC.NS",
+    "BPCL.NS",
+    "HINDPETRO.NS",
+    "TATASTEEL.NS",
+    "HINDALCO.NS",
+    "JSWSTEEL.NS",
+    "VEDL.NS",
+    "NMDC.NS",
+    "LT.NS",
+    "ULTRACEMCO.NS",
+    "GRASIM.NS",
+    "AMBUJACEM.NS",
+    "ACC.NS",
+    "TITAN.NS",
+    "ASIANPAINT.NS",
+    "PIDILITIND.NS",
+    "HAVELLS.NS",
+    "VOLTAS.NS",
+    "BHARTIARTL.NS",
+    "IDEA.NS",
+    "RCOM.NS",
+    "TATACOMM.NS",
+    "MTNL.NS"
+  ],
+  "date_range": {
+    "first_date": "2008-01-02",
+    "last_date": "2024-12-30",
+    "valid_observation_dates": 4185,
+    "invalid_dates": [],
+    "duplicate_dates": [],
+    "input_was_chronological": true,
+    "canonical_order": "ascending",
+    "calendar_gaps_over_three_days": [
+      {
+        "after": "2008-03-19",
+        "before": "2008-03-24",
+        "calendar_days": 5
+      },
+      {
+        "after": "2008-04-11",
+        "before": "2008-04-15",
+        "calendar_days": 4
+      },
+      {
+        "after": "2008-04-17",
+        "before": "2008-04-21",
+        "calendar_days": 4
+      },
+      {
+        "after": "2008-05-16",
+        "before": "2008-05-20",
+        "calendar_days": 4
+      },
+      {
+        "after": "2008-08-14",
+        "before": "2008-08-18",
+        "calendar_days": 4
+      },
+      {
+        "after": "2009-01-23",
+        "before": "2009-01-27",
+        "calendar_days": 4
+      },
+      {
+        "after": "2009-02-20",
+        "before": "2009-02-24",
+        "calendar_days": 4
+      },
+      {
+        "after": "2009-04-02",
+        "before": "2009-04-06",
+        "calendar_days": 4
+      },
+      {
+        "after": "2009-04-09",
+        "before": "2009-04-13",
+        "calendar_days": 4
+      },
+      {
+        "after": "2009-04-30",
+        "before": "2009-05-04",
+        "calendar_days": 4
+      },
+      {
+        "after": "2009-09-18",
+        "before": "2009-09-22",
+        "calendar_days": 4
+      },
+      {
+        "after": "2009-09-25",
+        "before": "2009-09-29",
+        "calendar_days": 4
+      },
+      {
+        "after": "2009-10-01",
+        "before": "2009-10-05",
+        "calendar_days": 4
+      },
+      {
+        "after": "2009-10-16",
+        "before": "2009-10-20",
+        "calendar_days": 4
+      },
+      {
+        "after": "2009-10-30",
+        "before": "2009-11-03",
+        "calendar_days": 4
+      },
+      {
+        "after": "2009-12-24",
+        "before": "2009-12-29",
+        "calendar_days": 5
+      },
+      {
+        "after": "2009-12-31",
+        "before": "2010-01-04",
+        "calendar_days": 4
+      },
+      {
+        "after": "2010-02-11",
+        "before": "2010-02-15",
+        "calendar_days": 4
+      },
+      {
+        "after": "2010-02-26",
+        "before": "2010-03-02",
+        "calendar_days": 4
+      },
+      {
+        "after": "2010-04-01",
+        "before": "2010-04-05",
+        "calendar_days": 4
+      },
+      {
+        "after": "2010-09-09",
+        "before": "2010-09-13",
+        "calendar_days": 4
+      },
+      {
+        "after": "2010-11-04",
+        "before": "2010-11-08",
+        "calendar_days": 4
+      },
+      {
+        "after": "2010-12-16",
+        "before": "2010-12-20",
+        "calendar_days": 4
+      },
+      {
+        "after": "2011-04-21",
+        "before": "2011-04-25",
+        "calendar_days": 4
+      },
+      {
+        "after": "2011-08-12",
+        "before": "2011-08-16",
+        "calendar_days": 4
+      },
+      {
+        "after": "2011-11-04",
+        "before": "2011-11-08",
+        "calendar_days": 4
+      },
+      {
+        "after": "2012-02-17",
+        "before": "2012-02-21",
+        "calendar_days": 4
+      },
+      {
+        "after": "2012-04-04",
+        "before": "2012-04-09",
+        "calendar_days": 5
+      },
+      {
+        "after": "2012-08-17",
+        "before": "2012-08-21",
+        "calendar_days": 4
+      },
+      {
+        "after": "2012-10-25",
+        "before": "2012-10-29",
+        "calendar_days": 4
+      },
+      {
+        "after": "2013-03-28",
+        "before": "2013-04-01",
+        "calendar_days": 4
+      },
+      {
+        "after": "2013-04-18",
+        "before": "2013-04-22",
+        "calendar_days": 4
+      },
+      {
+        "after": "2013-08-08",
+        "before": "2013-08-12",
+        "calendar_days": 4
+      },
+      {
+        "after": "2013-09-06",
+        "before": "2013-09-10",
+        "calendar_days": 4
+      },
+      {
+        "after": "2013-11-01",
+        "before": "2013-11-05",
+        "calendar_days": 4
+      },
+      {
+        "after": "2013-11-14",
+        "before": "2013-11-18",
+        "calendar_days": 4
+      },
+      {
+        "after": "2014-03-14",
+        "before": "2014-03-18",
+        "calendar_days": 4
+      },
+      {
+        "after": "2014-04-11",
+        "before": "2014-04-15",
+        "calendar_days": 4
+      },
+      {
+        "after": "2014-04-17",
+        "before": "2014-04-21",
+        "calendar_days": 4
+      },
+      {
+        "after": "2014-08-14",
+        "before": "2014-08-18",
+        "calendar_days": 4
+      },
+      {
+        "after": "2014-08-28",
+        "before": "2014-09-01",
+        "calendar_days": 4
+      },
+      {
+        "after": "2014-10-01",
+        "before": "2014-10-07",
+        "calendar_days": 6
+      },
+      {
+        "after": "2014-10-22",
+        "before": "2014-10-27",
+        "calendar_days": 5
+      },
+      {
+        "after": "2015-01-23",
+        "before": "2015-01-27",
+        "calendar_days": 4
+      },
+      {
+        "after": "2015-03-05",
+        "before": "2015-03-09",
+        "calendar_days": 4
+      },
+      {
+        "after": "2015-04-01",
+        "before": "2015-04-06",
+        "calendar_days": 5
+      },
+      {
+        "after": "2015-04-30",
+        "before": "2015-05-04",
+        "calendar_days": 4
+      },
+      {
+        "after": "2015-09-24",
+        "before": "2015-09-28",
+        "calendar_days": 4
+      },
+      {
+        "after": "2015-10-01",
+        "before": "2015-10-05",
+        "calendar_days": 4
+      },
+      {
+        "after": "2015-12-24",
+        "before": "2015-12-28",
+        "calendar_days": 4
+      },
+      {
+        "after": "2016-03-04",
+        "before": "2016-03-08",
+        "calendar_days": 4
+      },
+      {
+        "after": "2016-03-23",
+        "before": "2016-03-28",
+        "calendar_days": 5
+      },
+      {
+        "after": "2016-04-13",
+        "before": "2016-04-18",
+        "calendar_days": 5
+      },
+      {
+        "after": "2016-08-12",
+        "before": "2016-08-16",
+        "calendar_days": 4
+      },
+      {
+        "after": "2016-09-02",
+        "before": "2016-09-06",
+        "calendar_days": 4
+      },
+      {
+        "after": "2016-10-28",
+        "before": "2016-11-01",
+        "calendar_days": 4
+      },
+      {
+        "after": "2016-11-11",
+        "before": "2016-11-15",
+        "calendar_days": 4
+      },
+      {
+        "after": "2017-02-23",
+        "before": "2017-02-27",
+        "calendar_days": 4
+      },
+      {
+        "after": "2017-03-10",
+        "before": "2017-03-14",
+        "calendar_days": 4
+      },
+      {
+        "after": "2017-04-13",
+        "before": "2017-04-17",
+        "calendar_days": 4
+      },
+      {
+        "after": "2017-04-28",
+        "before": "2017-05-02",
+        "calendar_days": 4
+      },
+      {
+        "after": "2017-06-23",
+        "before": "2017-06-27",
+        "calendar_days": 4
+      },
+      {
+        "after": "2017-08-24",
+        "before": "2017-08-28",
+        "calendar_days": 4
+      },
+      {
+        "after": "2017-09-29",
+        "before": "2017-10-03",
+        "calendar_days": 4
+      },
+      {
+        "after": "2017-10-19",
+        "before": "2017-10-23",
+        "calendar_days": 4
+      },
+      {
+        "after": "2017-12-22",
+        "before": "2017-12-26",
+        "calendar_days": 4
+      },
+      {
+        "after": "2018-01-25",
+        "before": "2018-01-29",
+        "calendar_days": 4
+      },
+      {
+        "after": "2018-03-01",
+        "before": "2018-03-05",
+        "calendar_days": 4
+      },
+      {
+        "after": "2018-03-28",
+        "before": "2018-04-02",
+        "calendar_days": 5
+      },
+      {
+        "after": "2018-11-22",
+        "before": "2018-11-26",
+        "calendar_days": 4
+      },
+      {
+        "after": "2019-03-01",
+        "before": "2019-03-05",
+        "calendar_days": 4
+      },
+      {
+        "after": "2019-03-28",
+        "before": "2019-04-01",
+        "calendar_days": 4
+      },
+      {
+        "after": "2019-04-18",
+        "before": "2019-04-22",
+        "calendar_days": 4
+      },
+      {
+        "after": "2019-04-26",
+        "before": "2019-04-30",
+        "calendar_days": 4
+      },
+      {
+        "after": "2019-08-09",
+        "before": "2019-08-13",
+        "calendar_days": 4
+      },
+      {
+        "after": "2019-08-30",
+        "before": "2019-09-03",
+        "calendar_days": 4
+      },
+      {
+        "after": "2019-10-18",
+        "before": "2019-10-22",
+        "calendar_days": 4
+      },
+      {
+        "after": "2019-10-25",
+        "before": "2019-10-29",
+        "calendar_days": 4
+      },
+      {
+        "after": "2020-02-20",
+        "before": "2020-02-24",
+        "calendar_days": 4
+      },
+      {
+        "after": "2020-04-03",
+        "before": "2020-04-07",
+        "calendar_days": 4
+      },
+      {
+        "after": "2020-04-09",
+        "before": "2020-04-13",
+        "calendar_days": 4
+      },
+      {
+        "after": "2020-04-30",
+        "before": "2020-05-04",
+        "calendar_days": 4
+      },
+      {
+        "after": "2020-05-22",
+        "before": "2020-05-26",
+        "calendar_days": 4
+      },
+      {
+        "after": "2020-10-01",
+        "before": "2020-10-05",
+        "calendar_days": 4
+      },
+      {
+        "after": "2020-11-13",
+        "before": "2020-11-17",
+        "calendar_days": 4
+      },
+      {
+        "after": "2020-11-27",
+        "before": "2020-12-01",
+        "calendar_days": 4
+      },
+      {
+        "after": "2020-12-24",
+        "before": "2020-12-28",
+        "calendar_days": 4
+      },
+      {
+        "after": "2021-03-26",
+        "before": "2021-03-30",
+        "calendar_days": 4
+      },
+      {
+        "after": "2021-04-01",
+        "before": "2021-04-05",
+        "calendar_days": 4
+      },
+      {
+        "after": "2021-09-09",
+        "before": "2021-09-13",
+        "calendar_days": 4
+      },
+      {
+        "after": "2021-10-14",
+        "before": "2021-10-18",
+        "calendar_days": 4
+      },
+      {
+        "after": "2021-11-04",
+        "before": "2021-11-08",
+        "calendar_days": 4
+      },
+      {
+        "after": "2021-11-18",
+        "before": "2021-11-22",
+        "calendar_days": 4
+      },
+      {
+        "after": "2022-03-17",
+        "before": "2022-03-21",
+        "calendar_days": 4
+      },
+      {
+        "after": "2022-04-13",
+        "before": "2022-04-18",
+        "calendar_days": 5
+      },
+      {
+        "after": "2022-08-12",
+        "before": "2022-08-16",
+        "calendar_days": 4
+      },
+      {
+        "after": "2023-04-06",
+        "before": "2023-04-10",
+        "calendar_days": 4
+      },
+      {
+        "after": "2023-04-13",
+        "before": "2023-04-17",
+        "calendar_days": 4
+      },
+      {
+        "after": "2023-04-28",
+        "before": "2023-05-02",
+        "calendar_days": 4
+      },
+      {
+        "after": "2023-09-29",
+        "before": "2023-10-03",
+        "calendar_days": 4
+      },
+      {
+        "after": "2023-11-24",
+        "before": "2023-11-28",
+        "calendar_days": 4
+      },
+      {
+        "after": "2023-12-22",
+        "before": "2023-12-26",
+        "calendar_days": 4
+      },
+      {
+        "after": "2024-01-19",
+        "before": "2024-01-23",
+        "calendar_days": 4
+      },
+      {
+        "after": "2024-01-25",
+        "before": "2024-01-29",
+        "calendar_days": 4
+      },
+      {
+        "after": "2024-03-07",
+        "before": "2024-03-11",
+        "calendar_days": 4
+      },
+      {
+        "after": "2024-03-22",
+        "before": "2024-03-26",
+        "calendar_days": 4
+      },
+      {
+        "after": "2024-03-28",
+        "before": "2024-04-01",
+        "calendar_days": 4
+      },
+      {
+        "after": "2024-05-17",
+        "before": "2024-05-21",
+        "calendar_days": 4
+      },
+      {
+        "after": "2024-06-14",
+        "before": "2024-06-18",
+        "calendar_days": 4
+      },
+      {
+        "after": "2024-11-14",
+        "before": "2024-11-18",
+        "calendar_days": 4
+      }
+    ],
+    "calendar_gap_note": "Calendar gaps are descriptive; without an exchange calendar they are not classified as missing trading sessions."
+  },
+  "duplicate_summary": {
+    "exact_duplicate_rows": 0,
+    "exact_duplicates_removed": 0,
+    "dates_with_conflicting_rows": []
+  },
+  "missingness": {
+    "total_missing_cells": 0,
+    "percentage_missing": 0.0,
+    "missing_by_asset": {
+      "HDFCBANK.NS": 0,
+      "ICICIBANK.NS": 0,
+      "KOTAKBANK.NS": 0,
+      "SBIN.NS": 0,
+      "AXISBANK.NS": 0,
+      "TCS.NS": 0,
+      "INFY.NS": 0,
+      "WIPRO.NS": 0,
+      "HCLTECH.NS": 0,
+      "TECHM.NS": 0,
+      "HINDUNILVR.NS": 0,
+      "ITC.NS": 0,
+      "NESTLEIND.NS": 0,
+      "BRITANNIA.NS": 0,
+      "DABUR.NS": 0,
+      "SUNPHARMA.NS": 0,
+      "DRREDDY.NS": 0,
+      "CIPLA.NS": 0,
+      "LUPIN.NS": 0,
+      "AUROPHARMA.NS": 0,
+      "MARUTI.NS": 0,
+      "M&M.NS": 0,
+      "BAJAJ-AUTO.NS": 0,
+      "HEROMOTOCO.NS": 0,
+      "EICHERMOT.NS": 0,
+      "RELIANCE.NS": 0,
+      "ONGC.NS": 0,
+      "IOC.NS": 0,
+      "BPCL.NS": 0,
+      "HINDPETRO.NS": 0,
+      "TATASTEEL.NS": 0,
+      "HINDALCO.NS": 0,
+      "JSWSTEEL.NS": 0,
+      "VEDL.NS": 0,
+      "NMDC.NS": 0,
+      "LT.NS": 0,
+      "ULTRACEMCO.NS": 0,
+      "GRASIM.NS": 0,
+      "AMBUJACEM.NS": 0,
+      "ACC.NS": 0,
+      "TITAN.NS": 0,
+      "ASIANPAINT.NS": 0,
+      "PIDILITIND.NS": 0,
+      "HAVELLS.NS": 0,
+      "VOLTAS.NS": 0,
+      "BHARTIARTL.NS": 0,
+      "IDEA.NS": 0,
+      "RCOM.NS": 0,
+      "TATACOMM.NS": 0,
+      "MTNL.NS": 0
+    },
+    "dates_with_missing_observations": [],
+    "imputation_performed": false
+  },
+  "invalid_price_summary": {
+    "invalid_price_count": 0,
+    "invalid_prices": [],
+    "zero_count": 0,
+    "negative_count": 0,
+    "non_numeric_count": 0,
+    "non_finite_count": 0
+  },
+  "asset_metadata": [
+    {
+      "ticker": "HDFCBANK.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "46.43719453933862",
+      "maximum_price": "1229.8553034682477"
+    },
+    {
+      "ticker": "ICICIBANK.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "21.785252905005656",
+      "maximum_price": "740.9631380180593"
+    },
+    {
+      "ticker": "KOTAKBANK.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "16.78835451848163",
+      "maximum_price": "692.9599227194591"
+    },
+    {
+      "ticker": "SBIN.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "40.38317717464504",
+      "maximum_price": "494.3682442611109"
+    },
+    {
+      "ticker": "AXISBANK.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "29.135239598546253",
+      "maximum_price": "759.7888791604494"
+    },
+    {
+      "ticker": "TCS.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "43.37722044506893",
+      "maximum_price": "2430.981072930276"
+    },
+    {
+      "ticker": "INFY.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "64.49765114347595",
+      "maximum_price": "1353.4105656171553"
+    },
+    {
+      "ticker": "WIPRO.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "39.2594788371664",
+      "maximum_price": "714.275074939363"
+    },
+    {
+      "ticker": "HCLTECH.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "29.77872098794949",
+      "maximum_price": "3702.135258789623"
+    },
+    {
+      "ticker": "TECHM.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "18.74330408898674",
+      "maximum_price": "902.0651531802112"
+    },
+    {
+      "ticker": "HINDUNILVR.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "84.25268688784465",
+      "maximum_price": "1908.5103927275327"
+    },
+    {
+      "ticker": "ITC.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "70.06142142569512",
+      "maximum_price": "1165.6456508458043"
+    },
+    {
+      "ticker": "NESTLEIND.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "23.63269044344472",
+      "maximum_price": "311.59609366776147"
+    },
+    {
+      "ticker": "BRITANNIA.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "75.70010615890268",
+      "maximum_price": "5515.0484890195"
+    },
+    {
+      "ticker": "DABUR.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "57.54622576978499",
+      "maximum_price": "1358.7052537020872"
+    },
+    {
+      "ticker": "SUNPHARMA.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "77.26021656603548",
+      "maximum_price": "1831.773247524461"
+    },
+    {
+      "ticker": "DRREDDY.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "51.87251978518432",
+      "maximum_price": "1094.806304313"
+    },
+    {
+      "ticker": "CIPLA.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "76.49518067716102",
+      "maximum_price": "883.7766387984766"
+    },
+    {
+      "ticker": "LUPIN.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "75.60996076950511",
+      "maximum_price": "2077.7415248108314"
+    },
+    {
+      "ticker": "AUROPHARMA.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "19.597985575369105",
+      "maximum_price": "3280.852215812663"
+    },
+    {
+      "ticker": "MARUTI.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "46.741122923383934",
+      "maximum_price": "1541.156037077191"
+    },
+    {
+      "ticker": "M&M.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "28.813795641136792",
+      "maximum_price": "1814.255195319264"
+    },
+    {
+      "ticker": "BAJAJ-AUTO.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "24.15358659436932",
+      "maximum_price": "3026.755555602081"
+    },
+    {
+      "ticker": "HEROMOTOCO.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "84.87364853814698",
+      "maximum_price": "1500.5427035734813"
+    },
+    {
+      "ticker": "EICHERMOT.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "36.87818995817083",
+      "maximum_price": "14354.760634052172"
+    },
+    {
+      "ticker": "RELIANCE.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "35.98238308704668",
+      "maximum_price": "555.5132036169196"
+    },
+    {
+      "ticker": "ONGC.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "42.470605943728266",
+      "maximum_price": "325.3397904209189"
+    },
+    {
+      "ticker": "IOC.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "40.47342476227692",
+      "maximum_price": "619.5278120853866"
+    },
+    {
+      "ticker": "BPCL.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "41.53283896423331",
+      "maximum_price": "1752.0879535880983"
+    },
+    {
+      "ticker": "HINDPETRO.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "47.5619713244161",
+      "maximum_price": "1605.881078704791"
+    },
+    {
+      "ticker": "TATASTEEL.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "16.39320947679738",
+      "maximum_price": "316.04790850253534"
+    },
+    {
+      "ticker": "HINDALCO.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "19.43413152966318",
+      "maximum_price": "452.20990574669776"
+    },
+    {
+      "ticker": "JSWSTEEL.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "12.530994639360555",
+      "maximum_price": "953.090061521263"
+    },
+    {
+      "ticker": "VEDL.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "32.97445358202628",
+      "maximum_price": "851.1655447223399"
+    },
+    {
+      "ticker": "NMDC.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "37.65750326934023",
+      "maximum_price": "356.9457757219583"
+    },
+    {
+      "ticker": "LT.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "27.26411988517508",
+      "maximum_price": "535.3954804502254"
+    },
+    {
+      "ticker": "ULTRACEMCO.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "26.333312528298585",
+      "maximum_price": "1317.5183459890227"
+    },
+    {
+      "ticker": "GRASIM.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "24.077491139337397",
+      "maximum_price": "570.9020654510081"
+    },
+    {
+      "ticker": "AMBUJACEM.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "30.89966225850996",
+      "maximum_price": "641.1838337618711"
+    },
+    {
+      "ticker": "ACC.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "39.763876157762894",
+      "maximum_price": "360.1437392555002"
+    },
+    {
+      "ticker": "TITAN.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "45.79989932963629",
+      "maximum_price": "5476.530071546857"
+    },
+    {
+      "ticker": "ASIANPAINT.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "63.48926935172376",
+      "maximum_price": "3624.8566257768935"
+    },
+    {
+      "ticker": "PIDILITIND.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "41.2066504452885",
+      "maximum_price": "3962.427241128008"
+    },
+    {
+      "ticker": "HAVELLS.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "15.306584808587507",
+      "maximum_price": "3448.896725957458"
+    },
+    {
+      "ticker": "VOLTAS.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "13.176738836423302",
+      "maximum_price": "901.087186873059"
+    },
+    {
+      "ticker": "BHARTIARTL.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "50.68726590035012",
+      "maximum_price": "438.22271229825446"
+    },
+    {
+      "ticker": "IDEA.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "3.6405139268139424",
+      "maximum_price": "149.18114838264307"
+    },
+    {
+      "ticker": "RCOM.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "0.0760881366218436",
+      "maximum_price": "111.10284563815512"
+    },
+    {
+      "ticker": "TATACOMM.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "20.49350759321064",
+      "maximum_price": "581.4569570678156"
+    },
+    {
+      "ticker": "MTNL.NS",
+      "first_date": "2008-01-02",
+      "last_date": "2024-12-30",
+      "observation_count": 4185,
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "minimum_price": "2.4689595290772",
+      "maximum_price": "101.49110278914895"
+    }
+  ],
+  "return_dataset": {
+    "status": "passed",
+    "row_count": 4185,
+    "asset_count": 50,
+    "initial_undefined_observations": 50,
+    "units": "decimal simple returns; 0.01 represents 1%",
+    "formula": "P_t / P_(t-1) - 1",
+    "errors": [],
+    "path": "C:\\Users\\Yatharth Mehta\\OneDrive\\Desktop\\Risk_Manager_System\\data\\processed\\nse50_returns.csv",
+    "generated_row_count": 4185,
+    "generated_asset_count": 50
+  },
+  "output_paths": {
+    "prices": "C:\\Users\\Yatharth Mehta\\OneDrive\\Desktop\\Risk_Manager_System\\data\\processed\\nse50_prices_clean.csv",
+    "returns": "C:\\Users\\Yatharth Mehta\\OneDrive\\Desktop\\Risk_Manager_System\\data\\processed\\nse50_returns.csv",
+    "metadata": "C:\\Users\\Yatharth Mehta\\OneDrive\\Desktop\\Risk_Manager_System\\data\\processed\\nse50_metadata.csv"
+  }
+}

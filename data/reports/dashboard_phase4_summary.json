@@ -1,0 +1,33 @@
+{
+  "source": "Previously validated Phase 4 actual portfolio backtest summary; forecast rows are not persisted.",
+  "period": {
+    "forecast_count": 3684,
+    "confidence_level": 0.95,
+    "minimum_training_observations": 500,
+    "window_mode": "expanding",
+    "refit_frequency": 1
+  },
+  "models": [
+    {"model_name": "historical", "violations": 480, "violation_rate": 0.130293, "expected_rate": 0.05, "kupiec_p_value": 7.004899e-79, "independence_p_value": 8.423885e-12, "conditional_coverage_p_value": 1.218573e-87, "runtime_seconds": 8.991241},
+    {"model_name": "gaussian", "violations": 383, "violation_rate": 0.103963, "expected_rate": 0.05, "kupiec_p_value": 7.195070e-40, "independence_p_value": 1.552336e-6, "conditional_coverage_p_value": 1.165225e-43, "runtime_seconds": 7.008502},
+    {"model_name": "student_t", "violations": 458, "violation_rate": 0.124321, "expected_rate": 0.05, "kupiec_p_value": 4.113619e-69, "independence_p_value": 6.215676e-12, "conditional_coverage_p_value": 4.966136e-78, "runtime_seconds": 3671.156786},
+    {"model_name": "monte_carlo", "violations": 481, "violation_rate": 0.130565, "expected_rate": 0.05, "kupiec_p_value": 2.450780e-79, "independence_p_value": 1.136587e-11, "conditional_coverage_p_value": 5.734276e-88, "runtime_seconds": 5.138913},
+    {"model_name": "garch_1_1_gaussian", "violations": 170, "violation_rate": 0.046145, "expected_rate": 0.05, "kupiec_p_value": 0.277054, "independence_p_value": 0.482645, "conditional_coverage_p_value": 0.432929, "runtime_seconds": 204.084499}
+  ],
+  "champion_challenger_summary": {
+    "source": "Phase 5 configured evaluator applied to the persisted summary-only Phase 4 outputs; stability unavailable because daily forecast rows were not persisted.",
+    "champion": "garch_1_1_gaussian",
+    "eligible_challengers": [],
+    "ineligible_models": ["monte_carlo", "gaussian", "historical", "student_t"],
+    "significance_level": 0.05,
+    "weights": {"coverage": 0.4, "exception_rate": 0.25, "stability": 0.2, "operational_cost": 0.15},
+    "operational_time_scale_seconds": 60.0,
+    "ranking": [
+      {"model_name": "garch_1_1_gaussian", "eligible": true, "coverage_score": 1.0, "exception_rate_score": 0.9229098806, "stability_score": null, "operational_score": 0.2272000069, "total_score": 0.8310093390},
+      {"model_name": "monte_carlo", "eligible": false, "coverage_score": 0.0, "exception_rate_score": 0.0, "stability_score": null, "operational_score": 0.9211084011, "total_score": 0.1727078252},
+      {"model_name": "gaussian", "eligible": false, "coverage_score": 0.0, "exception_rate_score": 0.0, "stability_score": null, "operational_score": 0.8954087647, "total_score": 0.1678891434},
+      {"model_name": "historical", "eligible": false, "coverage_score": 0.0, "exception_rate_score": 0.0, "stability_score": null, "operational_score": 0.8696756158, "total_score": 0.1630641780},
+      {"model_name": "student_t", "eligible": false, "coverage_score": 0.0, "exception_rate_score": 0.0, "stability_score": null, "operational_score": 0.0160808037, "total_score": 0.0030151507}
+    ]
+  }
+}
