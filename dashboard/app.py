@@ -94,6 +94,7 @@ st.markdown(
         border-color: var(--terminal-border);
     }
     [data-testid="stSidebar"] [data-testid="stRadio"] label {font-size: 0.93rem;}
+    [data-testid="stSidebar"] .terminal-kicker {font-size: 0.95rem;}
     hr {border-color: var(--terminal-border);}
     .terminal-kicker {color: var(--terminal-accent); font-size: 0.73rem;
         font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase;}
