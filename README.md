@@ -2,13 +2,12 @@
 
 **AI-Assisted Quantitative Risk Model Validation & Challenger Framework**
 
-[![Live Dashboard](https://img.shields.io/badge/Live%20Dashboard-Streamlit-ff4b4b?logo=streamlit&logoColor=white)](https://riskchallenger-ltg7attq856fpddede4ue2.streamlit.app/)
 [![Python](https://img.shields.io/badge/Python-3.11%2B-3776ab?logo=python&logoColor=white)](https://www.python.org/)
 [![Testing](https://img.shields.io/badge/Testing-pytest-0a9edc)](https://pytest.org/)
 
 RiskChallenger is a local quantitative risk-management and model-validation platform for NSE equity portfolios. It connects historical market data, portfolio construction, loss-based risk models, out-of-sample backtesting, scenario stress testing, and model diagnostics in one reproducible workflow.
 
-**Live application:** [Open the RiskChallenger dashboard](https://riskchallenger-ltg7attq856fpddede4ue2.streamlit.app/)
+**Live application:** [Open Dashboard](https://riskchallenger-ltg7attq856fpddede4ue2.streamlit.app/)
 
 ## What the system does
 
