@@ -6,24 +6,44 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
-from dashboard.data_access import (
-    DEFAULT_ASSETS,
-    DEFAULT_WEIGHTS,
-    DEMO_VALUE,
-    build_portfolio_result,
-    build_stress_results,
-    calculate_risk_results,
-    create_portfolio,
-    discover_asset_universe,
-    format_risk_results,
-    format_stress_results,
-    is_reference_portfolio,
-    load_clean_prices,
-    load_phase4_snapshot,
-    load_phase7_snapshot,
-    overview_metrics,
-    validate_dashboard_weights,
-)
+if __package__:
+    from .data_access import (
+        DEFAULT_ASSETS,
+        DEFAULT_WEIGHTS,
+        DEMO_VALUE,
+        build_portfolio_result,
+        build_stress_results,
+        calculate_risk_results,
+        create_portfolio,
+        discover_asset_universe,
+        format_risk_results,
+        format_stress_results,
+        is_reference_portfolio,
+        load_clean_prices,
+        load_phase4_snapshot,
+        load_phase7_snapshot,
+        overview_metrics,
+        validate_dashboard_weights,
+    )
+else:
+    from data_access import (
+        DEFAULT_ASSETS,
+        DEFAULT_WEIGHTS,
+        DEMO_VALUE,
+        build_portfolio_result,
+        build_stress_results,
+        calculate_risk_results,
+        create_portfolio,
+        discover_asset_universe,
+        format_risk_results,
+        format_stress_results,
+        is_reference_portfolio,
+        load_clean_prices,
+        load_phase4_snapshot,
+        load_phase7_snapshot,
+        overview_metrics,
+        validate_dashboard_weights,
+    )
 
 PAGES = (
     "Overview",
@@ -37,6 +57,13 @@ DEMO_ASSET_SHOCKS = {
     "HDFCBANK.NS": -0.10,
     "ICICIBANK.NS": -0.15,
     "RELIANCE.NS": -0.20,
+}
+MODEL_DISPLAY_NAMES = {
+    "historical": "Historical",
+    "gaussian": "Gaussian",
+    "student_t": "Student-t",
+    "monte_carlo": "Monte Carlo",
+    "garch_1_1_gaussian": "GARCH(1,1) — Gaussian",
 }
 
 st.set_page_config(
@@ -431,14 +458,7 @@ def render_risk(portfolio, confidence: float) -> None:
     except (ValueError, RuntimeError, FloatingPointError) as error:
         st.error(f"Risk estimates unavailable for this portfolio: {error}")
         return
-    display_names = {
-        "historical": "Historical",
-        "gaussian": "Gaussian",
-        "student_t": "Student-t",
-        "monte_carlo": "Monte Carlo",
-        "garch_1_1_gaussian": "GARCH(1,1) Gaussian",
-    }
-    table["Model"] = table["Model"].map(display_names).fillna(table["Model"])
+    table["Model"] = table["Model"].map(MODEL_DISPLAY_NAMES).fillna(table["Model"])
     left, right = st.columns([1.2, 1])
     with left:
         st.dataframe(
@@ -458,11 +478,8 @@ def render_risk(portfolio, confidence: float) -> None:
 
 
 def render_backtesting(snapshot: dict, reference: bool) -> None:
-    st.subheader("Persisted historical backtesting")
-    st.caption(
-        "Phase 4 reference run · loaded from saved results; never run from this "
-        "dashboard."
-    )
+    st.subheader("Historical backtesting")
+    st.caption("Validated reference portfolio · stored backtest summary")
     if not snapshot.get("available", True):
         st.warning(snapshot.get("message", "Stored backtest summary unavailable."))
         return
@@ -472,10 +489,7 @@ def render_backtesting(snapshot: dict, reference: bool) -> None:
             "portfolio. Run the backtesting pipeline separately to generate "
             "results for this portfolio."
         )
-    st.warning(
-        "All figures below belong to the stored reference portfolio and its "
-        "validated run."
-    )
+    st.caption("Results shown for the validated reference portfolio.")
     period = snapshot["period"]
     st.caption(
         f"{period['forecast_count']:,} forecasts · "
@@ -505,7 +519,9 @@ def render_backtesting(snapshot: dict, reference: bool) -> None:
         )
         for row in summary.get("ranking", [])
     }
-    frame["Status"] = frame["Model"].map(statuses).fillna("Unavailable")
+    raw_model_names = frame["Model"]
+    frame["Status"] = raw_model_names.map(statuses).fillna("Unavailable")
+    frame["Model"] = raw_model_names.map(MODEL_DISPLAY_NAMES).fillna(raw_model_names)
     st.dataframe(
         frame.style.format(
             {
@@ -521,12 +537,8 @@ def render_backtesting(snapshot: dict, reference: bool) -> None:
         use_container_width=True,
     )
     champion = summary.get("champion", "Unavailable")
-    st.metric("Stored Champion", champion)
-    st.caption(snapshot.get("source", "Persisted Phase 4 summary."))
-    st.info(
-        "Forecast-level dates were not persisted. This view does not recalculate "
-        "violations or rerun Phase 4."
-    )
+    st.metric("Champion model", MODEL_DISPLAY_NAMES.get(champion, champion))
+    st.caption("Full-period reference validation · 95% confidence")
 
 
 def render_model_diagnostics(phase4: dict, phase7: dict, reference: bool) -> None:
@@ -544,7 +556,8 @@ def render_model_diagnostics(phase4: dict, phase7: dict, reference: bool) -> Non
                 "portfolio only."
             )
         st.markdown("### Champion–Challenger · full-period reference")
-        st.metric("Champion", summary.get("champion", "Unavailable"))
+        champion_name = summary.get("champion", "Unavailable")
+        st.metric("Champion", MODEL_DISPLAY_NAMES.get(champion_name, champion_name))
         ranking = pd.DataFrame(summary.get("ranking", []))
         if not ranking.empty:
             labels = {
@@ -557,6 +570,9 @@ def render_model_diagnostics(phase4: dict, phase7: dict, reference: bool) -> Non
                 "total_score": "Final score",
             }
             ranking = ranking.rename(columns=labels)
+            ranking["Model"] = ranking["Model"].map(MODEL_DISPLAY_NAMES).fillna(
+                ranking["Model"]
+            )
             st.dataframe(
                 ranking.style.format(
                     {
